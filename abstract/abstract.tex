@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Nunan Abstract Template%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Created by Christopher J. Ruscher%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Updated by John-Michael Velarde%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%March 2, 2015%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%DO NOT EDIT THE FOLLOWING LINES%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[12pt]{report}   %if draft use    \documentclass[12pt,a4paper,draft]{report}
+%\usepackage[psamsfonts]{amsfonts}%different fonts for math
+%\usepackage{amsmath} %Math font
+%\usepackage{amssymb} %Math font
+%\usepackage{color} %Allows the use of colored script
+%\usepackage{enumitem} %Edit enumerate
+%\usepackage{epsfig} %Use eps figures
+%\usepackage{float} %Extra float commands.  Force a figure to be where you want it
+%\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry} %Set the size of the page
+%\usepackage{graphicx} %Include graphics in latex
+%\usepackage[numbers,sort&compress]{natbib} %Bibliography package
+%\usepackage{setspace} %set the space between lines
+%\usepackage[normal]{subfigure}%allows for subfigures
+%
+%\newcommand{\Title}{title}
+%\newcommand{\Presenter}{presenter}
+%\newcommand{\coauthors}{coauthors}
+%\newcommand{\advisor}{advisor}
+%\newcommand{\level}{level}
+%\newcommand{\Department}{department}
+%\newcommand{\Abstract}{abstract}
+
+\begin{document}
+\setstretch {1.0}
+%\newpage
+\raggedright
+
+
+%Enter the required information below%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\Title}{\nolinebreak
+Swarm Robotics %Enter your title on this line
+}
+
+\renewcommand{\Presenter}{\nolinebreak
+Zhi Xing %Enter the presenter on this line
+}
+
+\renewcommand{\coauthors}{
+Gajendranath Gaurav Roy Puli %Enter your coauthors here leave this area blank if no coauthors
+}
+
+\renewcommand{\advisor}{\nolinebreak
+Jae C. Oh%Enter your academic advisor here
+}
+
+\renewcommand{\level}{\nolinebreak
+$4^{th}$ year PhD %Input the presenters level of education (i.e. $1^{st}$ year PhD, $2^{nd}$ year PhD, $3^{rd}$ year PhD ...)
+}
+
+\renewcommand{\Department}{\nolinebreak
+Electrical Engineering and Computer Science %Enter the name of your department here Biomedical and Chemical Engineering, Civil and Environmental Engineering, Electrical Engineering and Computer Science, or Mechanical and Aerospace Engineering.
+}
+
+\renewcommand{\Abstract}{
+%Type your abstract here
+We study swarm robotics, where a large number--perhaps thousands--of robots must cooperate to achieve common goals. The key challenges are scalability and robustness in the absence of centralized controls. Many swarm robotics researchers use the foraging problem as a test bed for new algorithms. Foraging problems can represent a variety of problems including search and rescue. In this problem, robots must find locations of `food? without any previous knowledge or a centralized control. Our approach uses completely distributed and autonomous robots that can dynamically assume useful roles, either being explorers or guiders, by utilizing their local information only. Because our solution is completely distributed and localized, it is expected to scale out very well even with an extremely large number of robots. We also developed a robot hardware prototype that can be used for general swarm robot research. The hardware utilizes the Arduino Mega 2560 board and infrared emitters and receivers for communication and obstacle detection. The key difficulty of designing the robot is the communication protocol, which currently is implemented as a state machine running as Interrupt Service Routines.  Many robotics research efforts stop at simulation work; however, we believe that robotics algorithms must be developed to work in the physical world. The challenge is to design algorithms that work in the physical world not only in a simulated world. The lessons learned in this research will help us to design cyber-physical systems that require the seamless integration of computational algorithms and physical components.
+%End of the abstract
+}
+
+%%%%%%%%%%%%%%%Do not Edit below this line%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setstretch {1.0}
+\raggedright
+{\addtolength{\leftskip}{4em}
+{\large\textbf{\Title}}\\[1em]
+}
+
+
+\noindent{\textbf{\Presenter}}\\
+{\coauthors}\\
+Department: {\Department}\\
+Advisor: \advisor\\
+Level: {\level}\\[1em]
+
+\Abstract 
+\\[2em]
+
+%\end{document}

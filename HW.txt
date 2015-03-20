@@ -1,0 +1,19 @@
+The hardware for the robot is kept as simple as possible so as to make it robust and for the most cost effective solution. 
+
+It consists of the following parts:
+ 	-Arduino Mega(Running the AtMega2560 uC)
+	-Pololu Motor driver()
+	-Two individually controlled wheels and a freewheel in the front.
+	-A PCB in the shape of an annular ring that houses all the emitters and receiver 	 and all other circuitry.
+	-A 7-segemnt display and four LED's that displays the value of the signal it is 	 receiving or the value it is sending which makes it easier to debug during 	 experiments.
+	-The receivers(TSOP34156) are the ones normally found in TV receiver's and operate 	 at 56 KHz frequency. The inbuilt circuit used in the receiver eliminates all other 	 IR frequencies and accepts only 56KHz and converts the signal into a digital 	 signal of 0 and 1, the component being passive high and active low.
+  	-For transmission of the IR signals, high power IR LEDs are used whose angle of 	 incidence is 50 degrees and forward current of 100mA.
+	- IR obstacle sensor in the front of the robot is placed on a servo which enables 	
+	 it to rotate 180 degrees and scan the environment around the robot for any 	 oncoming obstacles. This sensor can detect an obstacle anywhere in between 4-30 	 cms. 
+
+Given below is a high level datasheet representing all the components and how they are connected in the robot.
+
+
+
+
+   
